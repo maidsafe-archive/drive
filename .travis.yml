@@ -3,7 +3,6 @@ os:
 - osx
 language: rust
 rust:
-#- 1.0.0-beta
 - nightly
 after_success: |
   [ $TRAVIS_BRANCH = master ] &&
@@ -23,3 +22,6 @@ after_success: |
   sudo make install &&
   cd ../.. &&
   kcov --coveralls-id=$TRAVIS_JOB_ID --exclude-pattern=/.cargo target/kcov target/debug/drive-*;
+env:
+  global:
+    secure: CwApRrmnsf9PdRETb/+1p7v0sErC0jD7rvXRKF0Xvv5mRBtpJyZZ4ioulYScJSXZaMQxe/KNjIq2ZdOB2Ems8LKinPaJKvroLNGlMVrXFgg9NDlLb9OZM9HOKbVnfcPvxeZa5yoAa3sJuvmBV2EsUmNj/+C5556XCDf7PbKOXgI=
