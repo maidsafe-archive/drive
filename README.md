@@ -1,6 +1,6 @@
 # drive 
 
-A size based or time based message filter. Takes any generic type as key and will dop keys after a time period or size of containrt is reached. The filter has Add/Has key methods. Delete will be added at a later stage. This is a handy container for network based systems to filter previously seen messages.
+
 
 Travis build and test status
 
