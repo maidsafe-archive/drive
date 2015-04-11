@@ -15,15 +15,7 @@ Code Coverage
 
 [![Coverage Status](https://coveralls.io/repos/dirvine/drive/badge.svg)](https://coveralls.io/r/dirvine/drive)
 
-
 [Documentation](http://dirvine.github.io/drive/)
 
 #Todo
-- [ ] Implement add_key
-- [ ] Test add_key (time and size based tests)
-- [ ] Implement has_key  
-- [ ] Test has_key (time and size based tests)
-- [ ] API version 0.8.0
-- [ ] Implement delete_key  
-- [ ] Test delete_key (time and size based tests)
 - [ ] API version 0.1.0
