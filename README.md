@@ -8,5 +8,18 @@
 
 [Documentation](http://dirvine.github.io/drive/)
 
+
+#Prerequisites
+##Linux
+
+Requires fuse dev files. in ubuntu `sudo apt-get install libfuse-dev`
+
+##OSX
+
+Requires osxfuse (easiest method is to use homebrew and `brew install osxfuse`
+
+##Windows
+
+
 #Todo
 - [ ] API version 0.1.0
