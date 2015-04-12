@@ -6,7 +6,7 @@
 |:--------------------------:|:--------------------------------------:|:-----------:|
 [![Build Status](https://travis-ci.org/dirvine/drive.svg?branch=master)](https://travis-ci.org/dirvine/drive)|[![Build status](https://ci.appveyor.com/api/projects/status/jsuo65sa631h0kav?svg=true)](https://ci.appveyor.com/project/dirvine/drive)|[![Coverage Status](https://coveralls.io/repos/dirvine/drive/badge.svg)](https://coveralls.io/r/dirvine/drive)|
 
-[API Documentation](http://dirvine.github.io/drive/)
+|[API Documentation](http://dirvine.github.io/drive/)| [MaidSafe System Documention](http://systemdocs.maidsafe.net/) | [MaidSafe web site](http:://www.maidsafe.net) | [Safe Community site](http:://www.maidsafe.org) |
 
 #Overview
 
