@@ -6,7 +6,7 @@
 |:--------------------------:|:--------------------------------------:|:-----------:|
 [![Build Status](https://travis-ci.org/dirvine/drive.svg?branch=master)](https://travis-ci.org/dirvine/drive)|[![Build status](https://ci.appveyor.com/api/projects/status/jsuo65sa631h0kav?svg=true)](https://ci.appveyor.com/project/dirvine/drive)|[![Coverage Status](https://coveralls.io/repos/dirvine/drive/badge.svg)](https://coveralls.io/r/dirvine/drive)|
 
-|[API Documentation](http://dirvine.github.io/drive/)| [MaidSafe System Documention](http://systemdocs.maidsafe.net/) | [MaidSafe web site](http:://www.maidsafe.net) | [Safe Community site](http:://www.maidsafe.org) |
+|[API Documentation](http://dirvine.github.io/drive/)| [MaidSafe System Documention](http://systemdocs.maidsafe.net/) | [MaidSafe web site](http://www.maidsafe.net) | [Safe Community site](https://forum.safenetwork.io) |
 
 #Overview
 
@@ -28,7 +28,7 @@ Requires osxfuse (easiest method is to use homebrew and `brew install osxfuse`
 
 ##Bsd 
 
-Likely workign [Puffs](http://www.netbsd.org/docs/puffs/) and will require fuse-development library installed, but requires tests and CI integration.
+Likely working [Puffs](http://www.netbsd.org/docs/puffs/) and will require fuse-development library installed, but requires tests and CI integration.
 
 ##Windows
 
@@ -38,7 +38,7 @@ Currently unimplemented and will require the [windows driver frameworks](https:/
 #Todo
 - [ ] Finalise API
 - [ ] Confirm Bsd 
-- [ ] Povide simple example (mirror) 
+- [ ] Provide simple example (mirror) 
 - [ ] API version 0.0.8
 - [ ] Add windows driver version
 - [ ] API version 0.0.9
