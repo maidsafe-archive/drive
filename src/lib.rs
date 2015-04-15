@@ -22,8 +22,11 @@
        html_favicon_url = "http://maidsafe.net/img/favicon.ico",
               html_root_url = "http://dirvine.github.io/dirvine/drive/")]
 //!#Drive
-//!A cross platform virtual file-system in userspace (drive) that will appear as a regular drive an the operating system. 
+//!A cross platform virtual file-system in userspace (drive) that will appear as a regular drive an the operating system.
 //! The interface is a POSIX like API and this is exposed in every OS. May include a webdav interface where possible.
-//!IOS and Android etc. may require a driverless option and will require further consideration (webdav ?) to provide the 
+//!IOS and Android etc. may require a driverless option and will require further consideration (webdav ?) to provide the
 //! same cross platform/OS compatibility.
 //!This drive can provide a blocking call to be used as a stand alone application or a threaded call to all a drive to be mounted from any application.
+#[test]
+fn dummy()  {
+}
