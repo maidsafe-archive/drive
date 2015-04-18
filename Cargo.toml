@@ -11,5 +11,5 @@ license = "GPL-3.0"
 homepage = "http://www.maidsafe.net"
 
 # until this is updated on crates.io we need to get from git
-[dependencies.fuse]
-git="https://github.com/zargony/rust-fuse"
+#[dependencies.fuse]
+#git="https://github.com/zargony/rust-fuse"
