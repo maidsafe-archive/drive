@@ -1,4 +1,4 @@
-# drive 
+# Drive 
 
 
 
@@ -10,21 +10,21 @@
 
 #Overview
 
-A cross platform [virtual file-system in userspace](http://en.wikipedia.org/wiki/Filesystem_in_Userspace) (drive) that will appear as a regular drive an the operating system. The interface is a POSIX like API and this is exposed in every OS. May include a webdav interface where possible. 
+A cross platform [virtual file-system in userspace](http://en.wikipedia.org/wiki/Filesystem_in_Userspace) (drive) that will appear as a regular drive on the operating system. The interface is a POSIX-like API and this is exposed in every OS. May include a webdav interface where possible. 
 
-IOS and Android etc. may require a driverless option and will require further consideration (webdav ?) to provde the same cross platform/OS compatibility. 
+IOS and Android…etc… may require a driverless option, further consideration will also be required (webdav ?) to provide the same cross platform/OS compatibility. 
 
-This drive can provide a blocking call to be used as a stand alone application or a threaded call to all a drive to be mounted from any application. 
+This drive can provide a blocking call to be used as a stand alone application, or a threaded call to enable a drive to be mounted from any application. 
 
 #Build Prerequisites
 
 ##Linux
 
-Requires fuse dev files. in ubuntu `sudo apt-get install libfuse-dev`
+Requires fuse dev files in ubuntu `sudo apt-get install libfuse-dev`
 
 ##OSX
 
-Requires osxfuse (easiest method is to use homebrew and `brew install osxfuse`
+Requires osxfuse (easiest method is to use home brew and `brew install osxfuse`
 
 ##Bsd 
 
