@@ -24,7 +24,7 @@ Requires fuse dev files in ubuntu `sudo apt-get install libfuse-dev`
 
 ##OSX
 
-Requires osxfuse (easiest method is to use home brew and `brew install osxfuse`
+Requires osxfuse (easiest method is to use Homebrew and `brew install osxfuse`
 
 ##Bsd 
 
