@@ -1,33 +1,39 @@
 os:
-- linux
-- osx
+  - linux
+  - osx
+  
 language: rust
+
+sudo: required
+
 rust:
-- nightly
+  - beta
+
 before_install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get update; fi
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update; fi
+  
 install:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install libfuse-dev; fi
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install osxfuse; fi
-after_success: |
-  [ $TRAVIS_BRANCH = master ] &&
-  [ $TRAVIS_PULL_REQUEST = false ] &&
-  cargo doc &&
-  echo "<meta http-equiv=refresh content=0;url=`echo $TRAVIS_REPO_SLUG | cut -d '/' -f 2`/index.html>" > target/doc/index.html &&
-  sudo pip install ghp-import &&
-  ghp-import -n target/doc &&
-  git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages;
-  sudo apt-get install libcurl4-openssl-dev libelf-dev libdw-dev &&
-  wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz &&
-  tar xzf master.tar.gz &&
-  mkdir kcov-master/build &&
-  cd kcov-master/build &&
-  cmake .. &&
-  make &&
-  sudo make install &&
-  cd ../.. &&
-  kcov --coveralls-id=$TRAVIS_JOB_ID --exclude-pattern=/.cargo target/kcov target/debug/drive-*;
+
+before_script:
+  - |
+      sudo apt-get update -qq &&
+      sudo apt-get install -qq libcurl4-openssl-dev libelf-dev libdw-dev binutils-dev &&
+      pip install 'travis-cargo<0.2' --user &&
+      export PATH=$HOME/.local/bin:$PATH
+
+script:
+  - |
+      travis-cargo build &&
+      travis-cargo test &&
+      travis-cargo bench &&
+      travis-cargo --only beta doc
+after_success:
+  - travis-cargo --only beta doc-upload
+  - travis-cargo coveralls
+
 env:
   global:
     secure: CwApRrmnsf9PdRETb/+1p7v0sErC0jD7rvXRKF0Xvv5mRBtpJyZZ4ioulYScJSXZaMQxe/KNjIq2ZdOB2Ems8LKinPaJKvroLNGlMVrXFgg9NDlLb9OZM9HOKbVnfcPvxeZa5yoAa3sJuvmBV2EsUmNj/+C5556XCDf7PbKOXgI=
