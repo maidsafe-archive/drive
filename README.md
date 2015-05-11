@@ -3,7 +3,7 @@
 
 |Crate|Travis|Appveyor|Coverage|
 |:-------:|:-------:|:------:|:------:|
-|[![](http://meritbadge.herokuapp.com/drive)](https://crates.io/crates/drive)|[![Build Status](https://travis-ci.org/maidsafe/drive.svg?branch=master)](https://travis-ci.org/maidsafe/drive)|[![Build status](https://ci.appveyor.com/api/projects/status/k5mtki2neaoa8voq/branch/master?svg=true)](https://ci.appveyor.com/project/maidsafe/drive/branch/master)|[![Coverage Status](https://coveralls.io/repos/maidsafe/drive/badge.svg)](https://coveralls.io/r/maidsafe/drive)|
+|[![](http://meritbadge.herokuapp.com/drive)](https://crates.io/crates/drive)|[![Build Status](https://travis-ci.org/maidsafe/drive.svg?branch=master)](https://travis-ci.org/maidsafe/drive)|[![Build status](https://ci.appveyor.com/api/projects/status/oqwlca9awria3xmh/branch/master?svg=true)](https://ci.appveyor.com/project/dirvine/drive-9rqyh/branch/master)|[![Coverage Status](https://coveralls.io/repos/maidsafe/drive/badge.svg)](https://coveralls.io/r/maidsafe/drive)|
 
 |[API Documentation](http://maidsafe.github.io/drive/)| [MaidSafe System Documention](http://systemdocs.maidsafe.net/) | [MaidSafe web site](http://www.maidsafe.net) | [Safe Community site](https://forum.safenetwork.io) |
 
