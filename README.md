@@ -1,5 +1,8 @@
 # Drive
 
+**Primary Maintainer:**     Mahmoud Moadeli (mmoadeli@maidsafe.net)
+
+**Secondary Maintainer:**   Brian Smith (brian.smith@maidsafe.net)
 
 |Crate|Travis|Windows|OSX|Coverage|
 |:------:|:-------:|:-------:|:-------:|:-------:|
