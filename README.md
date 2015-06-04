@@ -48,3 +48,4 @@ Currently unimplemented and will require the [windows driver frameworks](https:/
 - [ ] API version 0.0.9
 - [ ] Webdav integration
 - [ ] API version 0.1.0
+- [ ] Investigate midipix and DokanY.
