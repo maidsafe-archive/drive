@@ -4,9 +4,9 @@
 
 **Secondary Maintainer:**   Brian Smith (brian.smith@maidsafe.net)
 
-|Crate|Linux|Windows|OSX|Coverage|
-|:------:|:-------:|:-------:|:-------:|:-------:|
-|[![](http://meritbadge.herokuapp.com/drive)](https://crates.io/crates/drive)|[![Build Status](https://travis-ci.org/maidsafe/drive.svg?branch=master)](https://travis-ci.org/maidsafe/drive)|[![Build Status](http://ci.maidsafe.net:8080/buildStatus/icon?job=drive_win64_status_badge)](http://ci.maidsafe.net:8080/job/drive_win64_status_badge/)|[![Build Status](http://ci.maidsafe.net:8080/buildStatus/icon?job=drive_osx_status_badge)](http://ci.maidsafe.net:8080/job/drive_osx_status_badge/)|[![Coverage Status](https://coveralls.io/repos/maidsafe/drive/badge.svg)](https://coveralls.io/r/maidsafe/drive)|
+|Crate|Linux/OS X|Windows|Coverage|Issues|
+|:---:|:--------:|:-----:|:------:|:----:|
+|[![](http://meritbadge.herokuapp.com/drive)](https://crates.io/crates/drive)|[![Build Status](https://travis-ci.org/maidsafe/drive.svg?branch=master)](https://travis-ci.org/maidsafe/drive)|[![Build Status](http://ci.maidsafe.net:8080/buildStatus/icon?job=drive_win64_status_badge)](http://ci.maidsafe.net:8080/job/drive_win64_status_badge/)|[![Coverage Status](https://coveralls.io/repos/maidsafe/drive/badge.svg)](https://coveralls.io/r/maidsafe/drive)|[![Stories in Ready](https://badge.waffle.io/maidsafe/drive.png?label=ready&title=Ready)](https://waffle.io/maidsafe/drive)|
 
 | [API Documentation - master branch](http://maidsafe.net/drive/master) | [SAFE Network System Documention](http://systemdocs.maidsafe.net) | [MaidSafe website](http://maidsafe.net) | [Safe Community site](https://forum.safenetwork.io) |
 |:------:|:-------:|:-------:|:-------:|
