@@ -1,38 +1,22 @@
 os:
   - linux
   - osx
-  
 language: rust
-
-sudo: required
-
 rust:
   - beta
+sudo: false
+branches:
+  only:
+      - master
 
-before_install:
-  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get update; fi
-  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update; fi
-  
 install:
-  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install libfuse-dev; fi
-  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew install osxfuse; fi
-
-before_script:
-  - |
-      sudo apt-get update -qq &&
-      sudo apt-get install -qq libcurl4-openssl-dev libelf-dev libdw-dev binutils-dev &&
-      pip install 'travis-cargo<0.2' --user &&
-      export PATH=$HOME/.local/bin:$PATH
-
+  - curl -sSL https://github.com/maidsafe/QA/raw/master/Bash%20Scripts/Travis/install_libsodium.sh | bash
+  - export PKG_CONFIG_PATH=$HOME/libsodium-1.0.3/lib/pkgconfig:$PKG_CONFIG_PATH
 script:
-  - |
-      travis-cargo build &&
-      travis-cargo test &&
-      travis-cargo bench &&
-      travis-cargo --only beta doc
+  - cargo build --verbose
+  - RUST_TEST_THREADS=1 cargo test
 after_success:
-  - travis-cargo --only beta doc-upload
-  - travis-cargo coveralls
+  - curl -sSL https://github.com/maidsafe/QA/raw/master/Bash%20Scripts/Travis/deploy_gh-pages.sh | bash
 
 env:
   global:
