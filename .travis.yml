@@ -1,23 +1,26 @@
+env:
+  global:
+    - secure: CwApRrmnsf9PdRETb/+1p7v0sErC0jD7rvXRKF0Xvv5mRBtpJyZZ4ioulYScJSXZaMQxe/KNjIq2ZdOB2Ems8LKinPaJKvroLNGlMVrXFgg9NDlLb9OZM9HOKbVnfcPvxeZa5yoAa3sJuvmBV2EsUmNj/+C5556XCDf7PbKOXgI=
+    - LibSodiumVersion=1.0.3
 os:
   - linux
   - osx
 language: rust
 rust:
+#  - nightly
   - beta
+#  - stable
 sudo: false
 branches:
   only:
-      - master
-
+    - master
+cache:
+  directories:
+    - $HOME/libsodium-$LibSodiumVersion
 install:
-  - curl -sSL https://github.com/maidsafe/QA/raw/master/Bash%20Scripts/Travis/install_libsodium.sh | bash
-  - export PKG_CONFIG_PATH=$HOME/libsodium-1.0.3/lib/pkgconfig:$PKG_CONFIG_PATH
+  - curl -sSLO https://github.com/maidsafe/QA/raw/master/Bash%20Scripts/Travis/install_libsodium.sh
+  - . install_libsodium.sh
 script:
-  - cargo build --verbose
-  - RUST_TEST_THREADS=1 cargo test
+  - curl -sSL https://github.com/maidsafe/QA/raw/master/Bash%20Scripts/Travis/build_and_run_tests.sh | bash
 after_success:
   - curl -sSL https://github.com/maidsafe/QA/raw/master/Bash%20Scripts/Travis/deploy_gh-pages.sh | bash
-
-env:
-  global:
-    secure: CwApRrmnsf9PdRETb/+1p7v0sErC0jD7rvXRKF0Xvv5mRBtpJyZZ4ioulYScJSXZaMQxe/KNjIq2ZdOB2Ems8LKinPaJKvroLNGlMVrXFgg9NDlLb9OZM9HOKbVnfcPvxeZa5yoAa3sJuvmBV2EsUmNj/+C5556XCDf7PbKOXgI=
