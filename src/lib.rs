@@ -27,7 +27,7 @@
         unused_qualifications, unused_results, variant_size_differences)]
 #![doc(html_logo_url = "https://raw.githubusercontent.com/maidsafe/QA/master/Images/maidsafe_logo.png",
        html_favicon_url = "http://maidsafe.net/img/favicon.ico",
-              html_root_url = "http://dirvine.github.io/dirvine/drive/")]
+       html_root_url = "http://maidsafe.github.io/drive/")]
 //!#Drive
 //!A cross platform virtual file-system in userspace (drive) that will appear as a regular drive on the operating system.
 //! The interface is a POSIX-like API and this is exposed in every OS. May include a webdav interface where possible.
