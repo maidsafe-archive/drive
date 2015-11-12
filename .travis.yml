@@ -1,6 +1,6 @@
 env:
   global:
-    - secure: KZrzTgRdididHXCqiCFQGpMUriD602KjVqQJNkLiWGhporbt2Y51EUGe9Ijfc02AXpscW1EAwlTSThbyh4TczU0vUg4Meyo8mmsXAf2xnQ6rG3MzBUS2LxhG2Y0XDNWr/hwEMR321WXQWnHbFemZCs/Zs2nLMc3bpytFQ/h13K0=
+    - secure: HIYV2gowX+/8qoR50ClGluqF/DqfN1xg3R/nWvlwk9hNnIEaCDIhMrgyfQDOkAcqbxPO0IwdQ22RS2SefVADoGqT1Qlf3dyNxEFxv/vraypsMKMsQCF8UvbAjATzOpcuDX/oBsrkGGkbyjKqDmIcRkLHVMw9bkMgnalKTrhCU6Q=
 os:
   - linux
   - osx
