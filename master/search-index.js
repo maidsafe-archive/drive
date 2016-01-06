@@ -1,0 +1,3 @@
+var searchIndex = {};
+searchIndex['drive'] = {"items":[[0,"","drive","#Drive\nA cross platform virtual file-system in userspace (drive) that will appear as a regular drive on the operating system.\n The interface is a POSIX-like API and this is exposed in every OS. May include a webdav interface where possible.\nIOS and Android etc. may require a driverless option and will require further consideration (webdav ?) to provide the\n same cross platform/OS compatibility.\nThis drive can provide a blocking call to be used as a stand alone application or a threaded call to enable a drive to be mounted from any application.",null,null]],"paths":[]};
+initSearch(searchIndex);
