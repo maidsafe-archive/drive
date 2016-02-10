@@ -9,6 +9,7 @@
 
     <title>lib.rs.html -- source</title>
 
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
 
     <link rel="shortcut icon" href="http://maidsafe.net/img/favicon.ico">
@@ -86,6 +87,10 @@
 <span id="44">44</span>
 <span id="45">45</span>
 <span id="46">46</span>
+<span id="47">47</span>
+<span id="48">48</span>
+<span id="49">49</span>
+<span id="50">50</span>
 </pre><pre class='rust '>
 <span class='comment'>// Copyright 2015 MaidSafe.net limited.</span>
 <span class='comment'>//</span>
@@ -126,9 +131,13 @@
         <span class='ident'>unknown_lints</span>, <span class='ident'>unsafe_code</span>, <span class='ident'>unused</span>, <span class='ident'>unused_allocation</span>, <span class='ident'>unused_attributes</span>,
         <span class='ident'>unused_comparisons</span>, <span class='ident'>unused_features</span>, <span class='ident'>unused_parens</span>, <span class='ident'>while_true</span>)]</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>warn</span>(<span class='ident'>trivial_casts</span>, <span class='ident'>trivial_numeric_casts</span>, <span class='ident'>unused_extern_crates</span>, <span class='ident'>unused_import_braces</span>,
-        <span class='ident'>unused_qualifications</span>, <span class='ident'>unused_results</span>, <span class='ident'>variant_size_differences</span>)]</span>
+        <span class='ident'>unused_qualifications</span>, <span class='ident'>unused_results</span>)]</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>box_pointers</span>, <span class='ident'>fat_ptr_transmutes</span>, <span class='ident'>missing_copy_implementations</span>,
-         <span class='ident'>missing_debug_implementations</span>)]</span>
+         <span class='ident'>missing_debug_implementations</span>, <span class='ident'>variant_size_differences</span>)]</span>
+
+<span class='comment'>//#![cfg_attr(feature=&quot;clippy&quot;, feature(plugin))]</span>
+<span class='comment'>//#![cfg_attr(feature=&quot;clippy&quot;, plugin(clippy))]</span>
+<span class='comment'>//#![cfg_attr(feature=&quot;clippy&quot;, deny(clippy, clippy_pedantic))]</span>
 
 <span class='attribute'>#[<span class='ident'>test</span>]</span>
 <span class='kw'>fn</span> <span class='ident'>dummy</span>()  {
@@ -193,6 +202,6 @@
     <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     
-    <script async src="../../search-index.js"></script>
+    <script defer src="../../search-index.js"></script>
 </body>
 </html>
