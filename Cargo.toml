@@ -11,4 +11,5 @@ homepage = "http://maidsafe.net"
 
 # until this is updated on crates.io we need to get from git
 #[dependencies.fuse]
+#clippy = {version = "~0.0.37", optional = true}
 #git="https://github.com/zargony/rust-fuse"
