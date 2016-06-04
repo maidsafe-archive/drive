@@ -3,10 +3,10 @@ name = "drive"
 version = "0.0.1"
 authors = ["MaidSafe Developers <dev@maidsafe.net>"]
 description = "This is Pre alpha, and not useful, no code worth looking at."
-documentation = "http://maidsafe.net/drive/latest"
+documentation = "http://docs.maidsafe.net/drive/latest"
 repository = "https://github.com/maidsafe/drive"
 readme = "README.md"
-license = "GPL-3.0"
+license = "GPL-3.0/MaidSafe.net Commercial License 1.0"
 homepage = "http://maidsafe.net"
 
 # until this is updated on crates.io we need to get from git
