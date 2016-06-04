@@ -1,12 +1,12 @@
 # Drive
 
-**Primary Maintainer:** Brian Smith (brian.smith@maidsafe.net)
+**Maintainer:** Spandan Sharma (spandan.sharma@maidsafe.net)
 
 |Crate|Linux/OS X|Windows|Coverage|Issues|
 |:---:|:--------:|:-----:|:------:|:----:|
 |[![](http://meritbadge.herokuapp.com/drive)](https://crates.io/crates/drive)|[![Build Status](https://travis-ci.org/maidsafe/drive.svg?branch=master)](https://travis-ci.org/maidsafe/drive)|[![Build status](https://ci.appveyor.com/api/projects/status/so3q2w6g8vey2avl/branch/master?svg=true)](https://ci.appveyor.com/project/MaidSafe-QA/drive/branch/master)|[![Coverage Status](https://coveralls.io/repos/maidsafe/drive/badge.svg)](https://coveralls.io/r/maidsafe/drive)|[![Stories in Ready](https://badge.waffle.io/maidsafe/drive.png?label=ready&title=Ready)](https://waffle.io/maidsafe/drive)|
 
-| [API Documentation - master branch](http://maidsafe.net/drive/master) | [SAFE Network System Documentation](http://systemdocs.maidsafe.net) | [MaidSafe website](http://maidsafe.net) | [SAFE Network Forum](https://forum.safenetwork.io) |
+| [API Documentation - master branch](http://docs.maidsafe.net/drive/master) | [MaidSafe website](http://maidsafe.net) | [SAFE Network Forum](https://forum.safenetwork.io) |
 |:------:|:-------:|:-------:|:-------:|
 
 ## Overview
@@ -45,3 +45,19 @@ Currently unimplemented and will require the [windows driver frameworks](https:/
 - [ ] Webdav integration
 - [ ] API version 0.1.0
 - [ ] Investigate midipix and DokanY.
+
+## License
+
+Licensed under either of
+
+* the MaidSafe.net Commercial License, version 1.0 or later ([LICENSE](LICENSE))
+* the General Public License (GPL), version 3 ([COPYING](COPYING) or http://www.gnu.org/licenses/gpl-3.0.en.html)
+
+at your option.
+
+## Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the
+work by you, as defined in the MaidSafe Contributor Agreement, version 1.1 ([CONTRIBUTOR]
+(CONTRIBUTOR)), shall be dual licensed as above, and you agree to be bound by the terms of the
+MaidSafe Contributor Agreement, version 1.1.
